@@ -1,0 +1,18 @@
+.sidebar {
+  height: 100%;
+  position: fixed;
+}
+
+@media(min-width: 992px) {
+  .sidebar {
+    margin-right: 24px;
+    flex: 0 0 260px !important;
+    max-width: 260px !important;
+    min-width: 260px !important;
+    width: 260px !important;
+    left: 0;
+    top: 75px;
+    -webkit-box-shadow: 0 8px 24px rgb(168 180 208 / 10%);
+    box-shadow: 0 8px 24px rgb(168 180 208 / 10%);
+  }
+}
