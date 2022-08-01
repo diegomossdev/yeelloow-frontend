@@ -66,7 +66,7 @@ export const Footer = ({ informations }: FooterProps) => {
                 <S.Infos>
                   <Link href="/">
                     <a className="logo">
-                      <Image
+                      <img
                         src={`${process.env.APP_API_URL}/${logo}`}
                         width={93}
                         height={65}

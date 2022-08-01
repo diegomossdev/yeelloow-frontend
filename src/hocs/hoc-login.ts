@@ -43,7 +43,14 @@ const isAdminUser = async (token: any) => {
 export function hocLogin(gssp: any) {
   return async (context: any) => {
     const { req, resolvedUrl } = context;
-    const token = await getUserToken(req.headers.cookie); // Add logic to extract token from `req.headers.cookie`
+
+    let token = null;
+
+    if (req.headers.cookie) {
+      const tkn = await getUserToken(req.headers.cookie);
+
+      token = tkn;
+    }
 
     if (token) {
       const isAdmin = await isAdminUser(token);

@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Col, Row } from 'antd';
 import { Container } from 'components/Container/styles';
@@ -20,7 +19,7 @@ export const Header = ({ logo }: HeaderProps) => {
             <S.Logo>
               <Link href="/">
                 <a>
-                  <Image
+                  <img
                     src={`${process.env.APP_API_URL}/${logo}`}
                     width={93}
                     height={65}
