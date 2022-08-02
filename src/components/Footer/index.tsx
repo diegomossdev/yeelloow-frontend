@@ -104,7 +104,8 @@ export const Footer = ({ informations }: FooterProps) => {
           <Row>
             <Col style={{ width: '100%' }}>
               <span>
-                Copyright © 2022 EMPRESA, Todos os direitos reservados.
+                Copyright © 2022 +AH Festas e Eventos, Todos os direitos
+                reservados.
               </span>
             </Col>
           </Row>

@@ -12,7 +12,7 @@ export async function getStaticProps(): Promise<GetStaticPropsResult<any>> {
     props: {
       page: data,
     },
-    revalidate: 1800,
+    revalidate: 180,
   };
 }
 
